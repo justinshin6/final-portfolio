@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A/B Testing Handin</title>
+    <link href="styles/ab.css" rel="stylesheet" type="text/css" />        
+    <script src="/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/3fe29d8368.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-nav">
+            <div class="nav-holder nav-left">
+                <span class="nav-link nav-link-main">
+                    <a aria-label="Title" class="ul ul-1 scroll-to" href="#" target="_self">A/B Testing</a>
+                </span>
+            </div>
+            <div class="nav-holder nav-left">
+                <span class="nav-link">
+                    <a class="ul ul-1 scroll-to" href="#context" target="_self">Context</a>
+                </span>
+                <span class="nav-link">
+                    <a class="ul ul-2 scroll-to" href="#p1" target="_self">Data Collection</a>
+                </span>
+                <span class="nav-link">
+                    <a class="ul ul-3 scroll-to" href="#p2" target="_self">Creating Hypotheses</a>
+                </span>
+                <span class="nav-link">
+                    <a class="ul ul-4 scroll-to" href="#p3" target="_self">Analysis/Testing</a>
+                </span>
+                <span class="nav-link">
+                    <a class="ul ul-5 scroll-to" href="#p4" target="_self">Summary</a>
+                </span>
+    
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="main-header">A/B Testing Handin</h1>
+    <!-- CONTEXT SETTING -->
+    <section id="context" class="background">
+        <h1 class="context-head">Context</h1>
+        <div class="context-paragraph">
+            <p >The main purpose of this project is to look at the difference between two interfaces where the only difference is a small change 
+                to compare the old version (i.e., Version A) while the altered version (i.e., Version B). The task for this particular project was the following: 
+            </p>
+            <div class="task-contain">
+                <button class="task-button">Schedule an appointment with Adam Ng, MD at Morristown Medical Center on April 23, 2024</button>
+
+            </div>
+            <p>Therefore, the main overarching question that we want to answer in this project is whether or not the change that we made in Version B will 
+                lead to a statistically significant difference in certain metrics that we can measure in users. A/B allows us to test if certain designs 
+                have positive/negative effects because if there is no statistically significant difference, then that means that the change in Version B 
+                is irrelevant/unnecessary. However, if a change is statistically significant, then that means that this change could positively affect the 
+                overall usability of the interface. Therefore, in this project, we will explore if such a small change will have a great impact on certain metrics 
+                that we will collect, test, and measure. 
+            </p>
+        </div>
+       
+
+    </section>
+
+    <!-- PART 1: DATA Collection  -->
+    <section id="p1"class="p1">
+        <h1 class="part1">Part 1: Data Collection</h1>
+        <div class="context-paragraph">
+            <p>
+                The name of the website that we are trying to improve the design of is called MEDx, an all-inclusive interface where you can schedule and see appointments 
+                with nearby doctors, take care of payments and prescriptions, and much more. However, as stated in the context section above, our main task is to schedule
+                 an appointment with Adam Ng, MD at Morristown Medical Center on April 23, 2024. Therefore, to assist with this task, the small change that I made was to change 
+                 the color of the button to press to a dark blue color to try to indicate to the user that this is the button to click as it is the only button to press. The 
+                 differences in Version A and Version B are noted below. 
+            </p>
+
+        </div>
+    <div class="version-diff-contain">
+        <div class="versionA">
+            <h3 class="sub-section">Version A</h3>
+            <img src="/case-studies/assets/ab/versionA.png" alt="versionA">
+        </div>
+        <div class="versionB">
+            <h3 class="sub-section">Version B</h3>
+            <img src="/case-studies/assets/ab/versionB.png" alt="versionB">
+
+        </div>
+    </div>
+    <div class="context-paragraph">
+        <p>
+            As you can see, the button that you need to press to complete the task is shaded in a dark blue color in Version B while the rest 
+            of the buttons are greyed out to make the user shy away from clicking those buttons. This is the only change that I made from Version A to 
+            Version B. Additionally, I've also included tables of the different metrics that we measured for both Version A and Version B below to conclude our 
+            data collection process: 
+        </p>
+    </div>
+    <div class="version-data-contain">
+        <div class="versionA-data">
+            <h3 class="sub-section">Version A</h3>
+            <img src="assets/ab/versionA_data.png" alt="version A data">
+        </div>
+        <div class="versionB-data">
+            <h3 class="sub-section">Version B</h3>
+            <img src="assets/ab/versionB_data.png" alt="version B data">
+        </div>
+    </div>
+
+        
+
+    </section>
+
+    <!-- PART 2: CREATING HYPOTHESES -->
+    <section id="p2" class="p2">
+        <h1 class="part2">Part 2: Creating Hypotheses</h1>
+        <div class="context-paragraph">
+            <h3 class="sub-section">Creating Hypotheses</h3>
+            <p class="p2-response">Now, that I've collected our own data and participated in testing my classmates' designs in studio, we will 
+                now create null and alternative hypotheses for each of the following three data types: 
+            </p>
+            <br>
+            <ul>
+                <!-- MISCLICK RATE  -->
+                <li>
+                    <span class="underline">Misclick Rate</span>: the frequency with which users click something else on the page before finding the correct button for the task
+                    <ul class="sub-bullet">
+                        <li>
+                            <span class="underline">Null Hypothesis</span>: Version B will have the same misclick rate when compared with Version A. 
+                        </li>
+                        <li>
+                            <span class="underline">Prediction</span>: I predict that I will end up rejecting this null hypothesis. The reason why is that in Version B, I specifically 
+                            colored-in the button that needs to be clicked on to complete the task, so I predict that will limit the number of times that a user
+                            would click on an incorrect portion of the interface as they would naturally gravitate towards the only button that is colored-in. 
+                        </li>
+                        <li>
+                            <span class="underline">Alternative Hypothesis</span>: Version B will have a lower misclick rate when compared with Version A. 
+                        </li>
+                        <li>
+                            <span class="underline">Reasoning</span>: The reasoning behind my alternative hypothesis is that in Version B, since I colored-in the button 
+                            that needs to be pressed to complete the task, this would lower the chance that a user clicks on a different part of the interface. This means 
+                            that the misclick rate should be smaller than that of Version A as fewer incorrect clicks are made. 
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <!-- TIME ON PAGE -->
+                <li>
+                    <span class="underline">Time on Page</span>: time spent on the webpage for each user group
+                    <ul class="sub-bullet">
+                        <li>
+                            <span class="underline">Null Hypothesis</span>: On average, Version B will have the same time on page when compared to Version A.
+                        </li>
+                        <li>
+                            <span class="underline">Prediction</span>: I predict that I will end up rejecting the null hypothesis. The reason for this is because due to the change that I made, the 
+                            users will spend less time misclicking and hesitating to complete the task. This means that the overall time spent on the webpage will decrease leading to us rejecting the null hypothesis.
+                        </li>
+                        <li>
+                            <span class="underline">Alternative Hypothesis</span>: On average, Version B will have a lower time on page when compared to Version A. 
+                        </li>
+                        <li>
+                            <span class="underline">Reasoning</span>: The reasoning behind my alternative hypothesis is that due to the change made in Version B, people will 
+                            misclick less which leads to a fast completion of the task which leads to a lower time spent on the webpage. Therefore, that's why I conclude that people will spend more 
+                            time on Version A when compared to Version B. 
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <!-- DID SUCCEED -->
+                <li>
+                    <span class="underline">Number of Clicks</span>: a metric of our own choosing! The specific method that I chose was <span class="italicize">num_clicks</span> which is a 
+                    continuous variable that counts the number of times that a user clicked on the screen. 
+                    <ul class="sub-bullet">
+                        <li>
+                            <span class="underline">Null Hypothesis</span>: The average number of clicks for users in Version B is the same as the average number of clicks 
+                            for users in Version A. 
+                        </li>
+                        <li>
+                            <span class="underline">Prediction</span>: I predict that I will reject the null hypothesis. The justification for this is because I predict that due to the change 
+                            to Version B, users will be less confused on how to complete the task leading to a decrease in the number of clicks when comparing Version B to Version A. 
+                        </li>
+                        <li>
+                            <span class="underline">Alternative Hypothesis</span>: The average number of clicks for users in Version B is smaller than the average number of clicks 
+                            for users in Version A. 
+                        </li>
+                        <li>
+                            <span class="underline">Reasoning</span>: The reason why I chose this altenrative hypothesis is due to the improvement made in Version B, I'm predicting 
+                            that the number of clicks will go down, so that means that the average number of clicks in Version B will be smaller due to less hesitation from the users in 
+                            completing the task. 
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+       
+    <!-- ANALYSIS & TESTING  -->
+    <section id="p3" class="p3">
+        <h1 class="part3">Part 3: Analysis & Testing</h1>
+        <div class="context-paragraph">
+            <p>
+                For this portion of the assignment, for each of the three metrics, we need to conduct a statistical test to determine 
+                whether the difference between versions A and B are statistically significant. The three tests that we can conduct are the
+                One-Tailed T-Test, the Two-Tailed T-Test, and the Chi-Squared Test. Additionally, for our null hypotheses, we will set our 
+                α = 0.05. This means that if our p-value is smaller than α = 0.05, then our evidence is statistically significant enough to 
+                reject our null hypothesis. 
+            </p>
+        </div>
+        <!-- MISCLICK RATE -->
+        <h3 class="metric-head">Misclick Rate</h1>
+        <div class="context-paragraph">
+            <span class="underline">Misclick Rate</span> - The test that I chose to run for this metric is the Chi-Squared Test. The reason for this 
+            is because for the metric <span class="italicize">did_mislick</span>, it is a categorical variable where the only values are True or False. 
+            Therefore, since this is not a continuous region of output values, I decided that a Chi-Squared test is more appropriate here. Therefore, 
+            after inputting the data (where I denoted FALSE = 0 and TRUE = 1), here are the results of the Chi-Squared Test: 
+            <br><br>
+            <img src="assets/ab/misclick_rate_chi_output.png" alt="misclick rate output">
+            <br>
+            <p>
+                As we can see, the difference between Version A and Version B when it comes to the misclick rate is very apparent. 
+            </p>
+            <ul >
+                <li>
+                    <span class="underline">Degrees of Freedom</span> - There is one degree of freedom in this case which is equal to the 
+                    number of categories minus one. Since the only categories that we had were TRUE and FALSE, it makes sense that we have 2 - 1 = 1 df. 
+                </li>
+                <li>
+                    <span class="underline">Chi-Squared Value</span> - For the Chi-Squared value, ꭓ² = 26.158 which means that there is a big magnitude
+                    of difference between the two versions. 
+                </li>
+                <li>
+                    <span class="underline">Expected Values Grid</span> - Once again, looking at the difference in values in the expected values grid, we can 
+                    see that this is a big difference between the two versions. Specifically, this illustrates that the number of misclicks are lower in Version B. 
+                </li>
+                <li>
+                    <span class="underline">P Value</span> - The p-value for the Chi-Squared test is an astonishing p = 0.0000003 which means that 
+                    there is a 0.00003% chance that there is no difference between the two groups. Therefore, since we know that α = 0.05 > p = 0.0000003, 
+                    that means that we can reject the null hypothesis. 
+                </li>
+                <li>
+                    <span class="underline">Conclusion</span> Overall, after an analysis on the outputted statistics, I conclude that we reject our null hypothesis and conclude that there is statistically significant evidence to show that the 
+                    alternative hypothesis is true. 
+                </li>
+            </ul> 
+        </div>
+        <!-- TIME ON PAGE -->
+        <h3 class="metric-head">Time on Page</h1>
+        <div class="context-paragraph">
+            <span class="underline">Time on Page</span> - The test that I chose to run for this metric is the One-Tailed T-Test. The reason for this is 
+            because for the metric <span class="italicize">time_on_page</span>, it is a continuous variable, so that eliminates the Chi-Squared test as 
+            an option. The reason why I didn't choose the Two-Tailed T-Test is because I predict that there will only be a decrease in the time spent on the 
+            webpage and not change in both directions. Since I only predict that there would be change in one direction, I thought that a One-Tailed T-Test
+            would be more appropriate here! Therefore, after inputting the data, here are the results of the One-Tailed T-Test: 
+            <img src="assets/ab/time_on_page_output.png" alt="time on page output">
+            <p>
+                An important distinction to make is that in when I named my alternative hypothesis for this metric, I said that "on average, Version B will have a lower time on page when compared to Version A."
+                Therefore, since I'm testing to see that version B's time on page is lower than version A's time on page, I inputted the data for Version B in Sample A 
+                and the data for Version A on Sample B to calculate the P value for (Version B < Version A) instead of the other way around. The screenshot above 
+                shows this change. 
+            </p>
+            <ul>
+                <li>
+                    <span class="underline">Averages</span> - When comparing the averages of Version B when compared to Version A, we can see that Version B has a significantly 
+                    lower average when it comes to time on page when compared to Version A. Specifically, the averages are 9338 and 29411 for Version B and Version A respectively. 
+                </li>
+                <li>
+                    <span class="underline">T-Score</span> - We have a t-score of -4.155 which means that there is a stark difference between the two groups. More specifically, 
+                    it means that the average of Version B is lower than that of Version A. 
+                </li>
+                <li>
+                    <span class="underline">P-Value</span> - We have a p-value of 0.0003 meaning that there is a 0.03% chance that there is no difference between the two groups. 
+                    Since α = 0.05 > p-value = 0.0003, this means that we can reject our null hypothesis.
+                </li>
+                <li>
+                    <span class="underline">Conclusion</span> - Overall, after an analysis on the outputted statistics, I conclude that we reject our null hypothesis and conclude that there is statistically significant evidence to show that the 
+                    alternative hypothesis is true. 
+                </li>
+            </ul>
+        </div>
+        <!-- NUMBER OF CLICKS -->
+        <h3 class="metric-head">Number of Clicks</h1>
+        <div class="context-paragraph">
+            <span class="underline">Number of Clicks</span> - The test that I chose for this metric is also the One-Tailed T-Test. The reason for this is 
+            because for the metric <span class="italicize">num_clicks</span>, it is a continuous variable, so that eliminates the Chi-Squared test as 
+            an option. The reason why I didn't choose a Two-Tailed T-Test is because I predict that there will only be a decrease in the number of clicks 
+            in Version B when compared to Version A. Therefore, since there is no change in two directions and only in one direction, I thought that choosing 
+            the One-Tailed T-Test would be appropriate here. Therefore, after inputting the data, here is the output of the One-Tailed T-Test. 
+            <img src="assets/ab/num_clicks_output.png" alt="num clicks output">
+            <p>
+                An important distinction to make is that in when I named my alternative hypothesis for this metric, I said that "the average number of clicks for users in Version B is smaller than the average number of clicks 
+                for users in Version A." Therefore, since I'm testing to see that version B's number of clicks is lower than version A's number of clicks, I inputted the data for Version B in Sample A 
+                and the data for Version A on Sample B to calculate the P value for (Version B < Version A) instead of the other way around. The screenshot above 
+                shows this change. 
+            </p>
+            <ul>
+                <li>
+                    <span class="underline">Averages</span> - When comparing the averages of Version B and Version A, we can see that Version B has a lower average when 
+                    compared to Version A. The averages are 2 and 6.4 respectively for Version B and Version A which supports our alternative hypothesis that Version B will 
+                    have a smaller average. 
+                </li>
+                <li>
+                    <span class="underline">Variances</span> - When comparing the variances of Version B and Version A, we can see that Version B has a much smaller variance. I predict 
+                    this is because people are less hesitant or confused when completing the task in Version B which will lead to a more consistent spread of clicks when compared to Version A. 
+                </li>
+                <li>
+                    <span class="underline">T-Score</span> - We have a t-score of -2.78 which means that there is a difference between the two groups. More specifically, it means that the 
+                    average of Version B is lower than the average of Version A. 
+                </li>
+                <li>
+                    <span class="underline">P-Value</span> - We have a p-value of 0.006 meaning that there is a 0.6% chance that there is no difference between the two groups. 
+                    Since we know that α = 0.05 > p-value = 0.006, this means that we can reject the null hypothesis. 
+                </li>
+                <li>
+                    <span class="underline">Conclusion</span> - Overall, after an analysis on the outputted statistics, I conclude that we reject our null hypothesis and conclude that there is statistically significant evidence to show that the 
+                    alternative hypothesis is true. 
+                </li>
+            </ul>
+        </div>
+        </div>
+
+    </section>
+    <section id="p4" class="p4">
+        <h1 class="part4">Part 4: Summary</h1>
+        <div class="context-paragraph">
+            <p>
+                In this section, I will evaluate the results from our tests in the previous section. First, it seems like the small change in design in Version B is a success as in 
+                every single one of my tests, we were able to reject the null hypothesis and conclude that there is statistically significant evidence to show that the 
+                alternative hypothesis is true. However, it is important to consider that in the data collection process, I was only able to collect samples from 16 different, random users. 
+                In the real world, it would be ideal to collect data from a greater sample of users, so due to the small sample size of this experiment, it is important to not extrapolate these results 
+                to a greater population. However, the data does seem to be compelling, even for such a small sample. We will go through each metric individually: 
+            </p>
+            <br>
+            <ul>
+                <li>
+                    <span class="underline">Misclick Rate</span> - In this metric, we can see that in the expected values grid, the expected frequency for Veresion B is way smaller
+                    than that of Version A which signifies that Version B leads to a lower misclick rate. The potential reason behind this is that due to the colored-in button, people were less 
+                    likely to click on the wrong places which leads to this smaller expected frequency. 
+                </li>
+                <br>
+                <li>
+                    <span class="underline">Time on Page</span> - In this metric, we can see that the average time spent on Version B is way smaller than that of Version A. Additionally, due to similar 
+                    variances between the two groups, we can conclude that there are not any huge outliers in each user group. The potential reason behind this is that due to the change in Version B, people 
+                    were less hesitant and knew exactly what to do to complete the task at hand, so overall, it leads to a smaller amount of time spent on the website completing the task. This is related to the previous
+                    metric because if there are more misclicks, people will spend more time on the task. Therefore, the lower misclicks in Version B is consistent with the lower amount of time spent on the interface. 
+                </li>
+                <br>
+                <li>
+                    <span class="underline">Number of Clicks </span> - In this metric, it is very apparent that the change in Version B is statistically significant. First, the average number of clicks 
+                    is lower in Version B. This could be due to the lower number of misclicks as seen in the metric above. The variance is lower in Version B. This illustrates that users in 
+                    Version B were more consistent, meaning that in general, people had the same idea of how to complete the task. Additionally, when looking at the data itself, we can see that the mode = 2
+                    by an overwhelming margin. The reason why is because 2 clicks is the least number of clicks required to complete the task, and since 14/16 people were able to complete the task in 2 clicks, 
+                    this illustrates how people were not confused on completing the task at all. 
+                </li>
+                <br>
+                <li>
+                    <span class="underline">Overall</span> - After analyzing the statistical measures, Version B seems to have a statistically significant improvement when compared to Version A. This illustrates the 
+                    power of A/B Testing and how it can incorporated in numerous different parts of the interface to improve the overall usability of an interface for the user. 
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- BACK BUTTON -->
+    <div class="back-button-contain">
+        <a href="../index.html#projects">
+            <button class="back-button">Back to Homepage</button>
+        </a>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <p class="creation-tag"><i class="fas fa-copyright"></i> Created by Justin Shin 2024</p>
+    </footer>
+    </body>
+</html>

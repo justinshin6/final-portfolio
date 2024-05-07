@@ -1,0 +1,256 @@
+/* IMPORTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Jim+Nightshade&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Jim+Nightshade&family=Jua&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Jim+Nightshade&family=Jua&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&family=Ojuju:wght@200..800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,200;1,200&family=Montserrat:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Allura");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Calistoga");
+/* CONSTANTS */
+:root {
+    --color-background: #eeeeee;
+    --color-navbar: #222831;
+    --color-button: #00adb5;
+    --color-button-hover: #0a6267;
+    --font-header: "Allura";
+    --font-body: "Calistoga";
+    --font-paragraph: "Montserrat";
+}
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* body {
+    background-color: var(--color-background);
+    margin: 0;
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    transition: top 1s; /* Transition effect when sliding down (and up) */
+}
+/* NAVBAR  */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: var(--color-navbar);
+    font-family: var(--font-paragraph);
+}
+
+div.nav-nav {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-navbar);
+}
+
+div.nav-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+span.nav-link {
+    margin: 0 10px;
+}
+
+.ul {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+span.nav-link > a:hover {
+    text-decoration: underline;
+}
+
+span.nav-link-main > a {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-family: var(--font-header);
+}
+
+/* CONTEXT */
+h1,
+h3,
+p {
+    margin: 0;
+}
+
+.main-header {
+    text-align: center;
+    margin-top: 115px;
+    font-size: 50px;
+}
+
+.background {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.context-head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.metric-head {
+    text-align: center;
+    font-size: 28px;
+}
+
+.context-paragraph {
+    border: 2px solid #000;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: left;
+    font-size: 18px;
+    font-family: var(--font-paragraph);
+}
+
+.websites-contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0px;
+
+    img {
+        width: 650px;
+        margin: 0 25px;
+        max-height: 80%;
+    }
+}
+
+.web-img {
+    margin: 0px;
+}
+
+.lof-list {
+    margin-left: 15px;
+}
+
+.part1,
+.part2,
+.part3,
+.part4,
+.part5 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.sub-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sub-bullet {
+    margin-left: 40px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 400px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button-contain {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.web-button {
+    padding: 30px 0px;
+    margin: 15px 0;
+    background-color: var(--color-button);
+    color: white;
+    border: none;
+    font-size: 22px;
+    width: 40%;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    font-family: var(--font-body);
+}
+
+.web-button:hover {
+    cursor: pointer;
+    background-color: var(--color-button-hover);
+}
+
+.back-button-contain {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.back-button {
+    padding: 30px 0px;
+    margin: 15px 0;
+    background-color: var(--color-button);
+    color: white;
+    border: none;
+    font-size: 20px;
+    width: 15%;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    font-family: var(--font-body);
+}
+
+.back-button:hover {
+    cursor: pointer;
+    background-color: var(--color-button-hover);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background-color: var(--color-navbar);
+}
+
+footer p {
+    font-size: 15px;
+    line-height: 0;
+    font-family: var(--font-paragraph);
+    color: white;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.italicize {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}

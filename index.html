@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/3fe29d8368.js" crossorigin="anonymous"></script>
+
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="scripts.js"></script>
+
+  <title>Justin's Personal Website</title>
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand scroll-to" href="javascript:window.location.reload();">Justin Shin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link scroll-to" href="#about-me">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-to" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-to" href="#other-interests">Interests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-to" href="/case-studies/assets/misc/Justin_Shin_Resume.pdf" target="_blank">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6 heading-description">
+          <p class="heading-intro">Hi, my name is <span class="heading-span-intro"></span></p>
+          <h1 class="main-heading">Justin Shin.<span class="heading-span-heading"></span></h1>
+          <p class="heading-description">I'm currently a third-year student at Brown University majoring in
+            Applied Mathematics and Computer Science. <span class="heading-span-description"></span></p>
+          <hr class="title-hr">
+        </div>
+        <div class="col-lg-6">
+          <img class="title-image" src="images/cover-image.JPG" alt="cover-image">
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+  <section id="about-me">
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="about-me-picture" src="images/brown-picture.JPG" alt="about-me picture">
+      </div>
+      <div class="col-lg-6 about-me-description">
+        <h1 class="about-me-heading"><strong>About Me</strong></h1>
+        <hr class="about-me-hr">
+        Hello! My name is Justin Shin. I'm a current APMA-CS student at Brown University specializing in Computer Systems. I've previously 
+        been a Software Engineer Intern at Cisco and Siege, and I'm excited to be incoming at Citadel this upcoming summer. 
+        <br><br>
+        If I'm not coding, you can catch me planning activities for Brown's Korean-American Students Association, playing pickup soccer with friends, 
+        randomly filming/editing videos, and wondering if Kendrick will drop another diss track. Thanks for stopping by!  
+        <br><br>
+
+      </div>
+    </div>
+
+  </section>
+  <section id="features">
+    <div class="row">
+      <div class="features col-lg-4">
+        <i class="features-icon fas fa-check-circle"></i>
+        <h3 class="features-title">Driven student</h3>
+        <p class="features-description">Showcases a love for learning</p>
+      </div>
+
+      <div class="features col-lg-4">
+        <i class="features-icon fas fa-heart"></i>
+        <h3 class="features-title">Leadership</h3>
+        <p class="features-description">Experience leading and working with numerous, different teams</p>
+      </div>
+
+      <div class="features col-lg-4">
+        <i class="features-icon fas fa-bullseye"></i>
+        <h3 class="features-title">Persistence</h3>
+        <p class="features-description">Continuously tackles challenges head on</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Projects -->
+
+  <section id="projects">
+    <h2 class="background-heading">Projects</h2>
+    <p class="background-description">Personal, School-work, and everything in between!</p>
+
+    <div id="background-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+
+
+        <div class="carousel-item ab-carousel">
+          <div class="row">
+            <div class="col-lg-6 ab-description">
+              <h2 class="carousel-heading"><strong>A/B Testing</strong></h2>
+              <h4 class="carousel-heading">CSCI1300: Spring 2024</h4>
+              <ul>
+                <li> Computed A/B Testing on  </li>
+                <li>Three-time region winner in International Extemporaneous Speaking</li>
+                <li>Given 40+ speeches on contrasting international, current issues and conflicts</li>
+              </ul>
+              <div class="ab-contain">
+                <a href="/case-studies/ab-testing.html">
+                  <button class="web-button">A/B Testing Case Study</button>
+                </a>
+              </div>
+
+            </div>
+            <div class="col-lg-6">
+              <img class="ab-picture" src="images/ab.png" alt="ab picture">
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item active modular-carousel">
+          <div class="row">
+            <div class="col-lg-6 modular-photo" >
+              <img class="modular-photo" src="images/modular.png" alt="modular-photo">
+            </div>
+            <div class="col-lg-6 modular-section">
+              <h2 class="carousel-heading"><strong>Iterative Design</strong></h2>
+              <h4 class="carousel-heading">CSCI1300: Spring 2024</h4>
+              <ul class="modular-description">
+                <li>
+                  Assigned to complete new iterative Design for Modular in a team with three classmates. 
+                </li>
+                <li>
+                  Collectively completed 32 sketches encompassing eight total, unique user-flows. Used Figma to design Lo-Fi and Hi-Fi wireframes.
+                </li>
+                <li>
+                  Presented findings to design head at Modular and received feedback from client and fellow peers. 
+                </li>
+              </ul>
+              <a href="/case-studies/iterative.html">
+                <button class="web-button">Iterative Design Case Study</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ab-carousel">
+          <div class="row">
+            <div class="col-lg-6 ab-description">
+              <h2 class="carousel-heading"><strong>The Shin Guards Blog</strong></h2>
+              <h4 class="carousel-heading">Summer 2022</h4>
+              <ul>
+                <li> Engineered and designed personal blog from scratch with React.js and Next.js using Tailwind CSS for styling and GraphQL with Hygraph (GraphCMS)
+                   to store posts, comments, categories, and authors.  </li>
+                <li> Wrote personal articles on soccer, productivity, and computer science.</li>
+              </ul>
+              <div class="ab-contain">
+                <a href="/case-studies/personalblog.html">
+                  <button class="web-button">Personal Blog Case Study</button>
+                </a>
+              </div>
+
+            </div>
+            <div class="col-lg-6">
+              <img class="ab-picture" src="images/shin-guards.png" alt="ab picture">
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev control-button" href="#background-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next control-button" href="#background-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <section id="other-interests">
+    <h1 class="other-interests-heading">Other Interests</h1>
+
+    <div class="row">
+      <div class="col-lg-6 interests-column">
+        <div class="card soccer-card">
+          <div class="card-header">
+            <img class="card-img-top soccer-picture" src="images/soccer-picture.JPG" alt="Card image cap">
+          </div>
+
+          <div class="card-body">
+            <h2><strong>Soccer</strong></h2>
+            <div class="soccer-description">
+              <ul>
+                <li>Current member of the Brown Men's Soccer Team</li>
+                <li>Team Captain on Georgia 2003 Olympic Development Soccer Team for 3 years</li>
+                <li>Played on Georgia Storm 2002 and Southern Soccer Academy 2003 International
+                Premier League Teams</li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 interests-column">
+        <div class="card piano-card">
+          <div class="card-header">
+            <img class="card-img-top piano-picture" src="images/piano-picture.JPG" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h2><strong>Piano</strong></h2>
+            <div class="piano-description">
+              <ul>
+                <li>Played for over 11 years</li>
+                <li>Two-time 1st Place Winner of the Kiwanis Music Showcase in Georgia</li>
+                <li>Played numerous pieces such as <span class="piano-pieces"></span>La Campanella</li> and
+                <span class="piano-pieces">Chopin's Etude Op. 25 No. 12</span>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <p class="creation-tag"><i class="fas fa-copyright"></i> Created by Justin Shin 2024</p>
+
+  </footer>
+</body>
+
+</html>
