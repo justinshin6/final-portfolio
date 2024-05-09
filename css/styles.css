@@ -311,8 +311,18 @@ h3 {
 }
 
 .creation-tag {
-    padding-bottom: 2%;
     margin: 0;
+}
+
+.icons {
+    font-size: 20px;
+    color: white;
+    margin: 20px 10px 30px 10px;
+}
+
+.icons:hover {
+    color: var(--color-secondary-hover);
+    cursor: pointer;
 }
 
 /* buttons  */
@@ -415,5 +425,12 @@ h3 {
     .literary-picture {
         position: relative;
         right: 4%;
+    }
+    #projects {
+        text-align: center;
+        background-color: var(--dark-background);
+        color: #fff;
+        text-align: center;
+        height: 1000px;
     }
 }

@@ -104,6 +104,7 @@ p {
 .context-head {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 30px;
 }
 
 .metric-head {
@@ -191,7 +192,7 @@ a:hover {
     color: white;
     border: none;
     font-size: 22px;
-    width: 40%;
+    width: 30%;
     border-radius: 20px;
     transition: background-color 0.3s ease;
     font-family: var(--font-body);
@@ -200,6 +201,43 @@ a:hover {
 .web-button:hover {
     cursor: pointer;
     background-color: var(--color-button-hover);
+}
+
+.react-contain {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: 15px 0px;
+}
+
+.react-photo {
+    width: 25%;
+    height: 50%;
+}
+
+.blog-contain {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: 15px 0px;
+}
+
+.blog-photo {
+    width: 45%;
+    height: 75%;
+}
+
+.id-contain {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: 15px 0px;
+    font-family: var(--font-paragraph);
+}
+
+.id-photo {
+    width: 75%;
+    height: 75%;
 }
 
 .back-button-contain {
@@ -224,6 +262,18 @@ a:hover {
 .back-button:hover {
     cursor: pointer;
     background-color: var(--color-button-hover);
+}
+.version-data-contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+        margin: 0 25px;
+        padding: 0 50px;
+    }
 }
 
 footer {
